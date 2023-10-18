@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Karla:ital,wght@1,300&family=Onest:wght@200;500&family=Open+Sans:wght@300&family=PT+Serif&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  background: olive;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav {
+  flex: 1;
+}
+
+nav img {
+  max-width: 90px;
+}
+ ul {list-style: none;
+padding-right: 20px;}
+ nav ul {
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 5px;
+  padding: 5px;
+  
+}
+
+/* Last Section */
+.last {
+  background: rgb(100, 2, 76);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.signing button {
+  background: red;
+  color: antiquewhite;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+/* Search Section */
+.search {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#search {
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#searchButton {
+  background: rgb(207, 23, 94);
+  color: aliceblue;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+#check1, #check2 {
+  width: 25px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* Selection Section */
+.selection {
+  background: rgb(207, 40, 68);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.selection button {
+  background: rgb(223, 216, 202);
+  color: rgb(170, 108, 26);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+/* Recommendations Section */
+.recom  {
+  background: black;
+  color: azure;
+  font-family: "Croissant One", serif;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Item Cards */
+.item {
+  background: white;
+  color: #111416;
+  font-family: "Croissant One", serif;
+  margin: 5px;
+  padding: 10px;
+}
+
+.item img {
+  max-width:500px;
+  height: 200px;
+}
+
+.item h1, .item h2, .item p,.item .logo {
+  text-align: left;
+  padding: 5px;
+}
+
+.item .logo {
+  max-width: 30px;
+  height: auto;
+}
+
+.item button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+/* Food Menu Section */
+.foodmenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.addcart {
+  width: 100px;
+}
+
+/* Chicken Course Section */
+.chickencourse {
+  text-align: center;
+  padding: 20px;
+}
+
+.chicken {
+  background: #000;
+  color: white;
+  padding: 20px;
+}
+
+/* mutton Course Section */
+.muttoncourse {
+  text-align: center;
+  padding: 20px;
+}
+
+.mutton {
+  background: #000;
+  color: white;
+  padding: 20px;
+}
+/* veg Course Section */
+.vegcourse {
+  text-align: center;
+  padding: 20px;
+}
+
+.veg {
+  background: #000;
+  color: white;
+  padding: 20px;
+}
+/* Breads Section */
+.Breadscourse {
+  text-align: center;
+  padding: 20px;
+}
+
+.Breads {
+  background: #000;
+  color: white;
+  padding: 20px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 550px) {
+  header {
+    padding: 5px;
+  }
+
+  nav img {
+    max-width: 60px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .last {
+    padding: 5px;
+  }
+
+  .signing button {
+    margin: 5px 0;
+  }
+
+  .search {
+    padding: 5px;
+  }
+
+  #search {
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  #searchButton {
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  #check1, #check2 {
+    margin-left: 10px;
+  }
+
+  .selection {
+    padding: 5px;
+  }
+
+  .selection button {
+    padding: 5px 10px;
+    margin: 5px 0;
+  }
+
+  .recom {
+    font-size: 14px;
+  }
+
+  .item {
+    margin: 5px;
+  }
+
+  .item h1, .item h2, .item p {
+    font-size: 14px;
+  }
+
+  .item button { 
+    padding: 5px 10px;
+  }
+
+  .foodmenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+}

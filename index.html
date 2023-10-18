@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title> Diya Food Zone </title> 
+                               
+</head>
+  <body>
+    <header>
+      <nav>
+        <img src="bbbb.png" alt="logo" width="70px" />
+        <h1>Diya food junction</h1>
+      </nav>
+      <ul>
+        <li><img src="call.png" alt="call" width="30px" /></li>
+        <li>8890560717</li>
+        <li>9694502510</li>
+      </ul>
+    </header>
+    <main>
+      <div class="last">
+        <h1>Minimum: 30% Off</h1>
+        <div class="signing">
+          <button onclick="signupFunction()">signup</button>
+          <button onclick="loginFunction()">Login</button>
+        </div>
+      </div>
+      <div class="search">
+        <label for="search">
+          <input
+            type="search"
+            name="check"
+            id="search"
+            placeholder="Search for food/dish"
+          />
+          <button id="searchButton" onclick="searchFood()">Search</button>
+          <input type="radio" name="check" id="check1" value="veg" />Veg
+          <input type="radio" name="check" id="check2" value="non-veg" />Non-veg
+        </label>
+      </div>
+      <div class="selection">
+        <button>Recommended</button>
+        <button id="chicken-button">chicken course</button>
+        <button id="mutton-button">mutton course</button>
+        <button id="biryani-button">BIRYANI SECTION</button>
+        <button id="combo-button">Combos</button>
+        <button id="starter-button">Starter</button>
+        <button id="veg-button">veg paneer course</button>
+        <button id="daal-button">daal course</button>
+        <button id="cold-button">cold drinks</button>
+        <button id="tandoor-button">tandoor course</button>
+        <button id="breads-button">Breads</button>
+      </div>
+      <div class="recom" id="Recommended-section">
+        <h1>Our Recommended</h1>
+
+        <div class="foodmenu">
+          <div class="item" data-food="Non-veg Thali">
+            <img src="kolhapuri-mutton-fry.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Non-veg Thali</h1>
+            <p>
+              chicken msala+chicken biryani+mutton msala+chicken lolipop+chicken
+              curry+egg cury+sweet +raita+papad+4 butter Naan
+            </p>
+            <h2>Rs 550.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+
+          <div class="item" data-food="Kadhai mutton">
+            <img src="khdai.jpeg" alt="img" width="600px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Kadhai mutton</h1>
+            <p>
+              Kadhai mutton is a delicious Indian mutton curry where mutton is
+              cooked with freshly ground spices, onions, capsicums and chillies.
+            </p>
+            <h2>Rs 250.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item" data-food="Chicken Mlai tikka">
+            <img src="mlai.jpg" alt="img" height="150px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Chicken Mlai tikka</h1>
+            <p>
+              Perfectly cooked tendered pieces of chicken with a rich tomato and
+              onion based gravy enriched with butter and subtle spices.
+              Garnished with cream.
+            </p>
+            <h2>Rs 190.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item item4" data-food=" Mini non-veg thali">
+            <img src="mininon.webp" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Mini non-veg thali</h1>
+            <p>
+              Chicken Biryani Half + Chicken Bhuna Half + 5 Roomali + 2
+              Buttermilk
+            </p>
+            <h2>Rs 200.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="chickencourse">
+        <h1 class="chicken">Chicken course</h1>
+        <div class="foodmenu">
+          <div class="item">
+            <img
+              class="img"
+              src="mango-chicken-curry-102913-1.jpeg"
+              alt="img"
+            />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Chicken yum yum</h1>
+            <p>Over best dish of chicken enjoy as a muh saaf</p>
+            <h2>Rs 150.00</h2>
+            <button class="addcart">Add</button>
+          </div>
+
+          <div class="item">
+            <img src="rostedchiken.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Rosted Chicken</h1>
+            <p>
+              chicken rosted a delicious Indian dish where chickenis rosted with
+              freshly ground spices, onions, capsicums and chillies.
+            </p>
+            <h2>Rs 250.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item">
+            <img src="shutterstock_223265560.webp" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Chicken curry</h1>
+            <p>
+              Perfectly cooked tendered pieces of chicken with a rich tomato and
+              onion based gravy enriched with butter and subtle spices.
+              Garnished with cream.
+            </p>
+            <h2>Rs 190.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item item4">
+            <img src="chicken-biryani (1).jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Chicken biryani</h1>
+            <p>
+              Chicken Biryani making by indian spices with basmati rice and desi
+              ghee.
+            </p>
+            <h2>Rs 200.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="muttoncourse">
+        <h1 class="mutton">Mutton course</h1>
+        <div class="foodmenu">
+          <div class="item" data-food=" mutton nalli nahri">
+            <img class="img" src="Nalli Nihari (2) - 1.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>mutton nalli nahri</h1>
+            <p>Over best dish of mutton enjoy as a muh saaf</p>
+            <h2>Rs 150.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+
+          <div class="item" data-food="mutton roganjosh">
+            <img
+              src="Mutton-Rogan-Josh-by-PictureTheRecipe-1.webp"
+              alt="img"
+              width="400px"
+            />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>mutton roganjosh</h1>
+            <p>
+              mutton rosted a delicious Indian dish where chickenis rosted with
+              freshly ground spices, onions, capsicums and chillies.
+            </p>
+            <h2>Rs 250.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item" data-food="mutton curry">
+            <img src="muttoncurry.jpg" alt="img" width="400px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>mutton curry</h1>
+            <p>
+              Perfectly cooked tendered pieces of mutton with a rich tomato and
+              onion based gravy enriched with butter and subtle spices.
+              Garnished with cream.
+            </p>
+            <h2>Rs 190.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item item4" data-food="mutton biryani">
+            <img src="muttonbiryani.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>mutton biryani</h1>
+            <p>
+              mutton Biryani making by indian spices with basmati rice and desi
+              ghee.
+            </p>
+            <h2>Rs 200.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="vegcourse">
+        <h1 class="veg">Veg course</h1>
+        <div class="foodmenu">
+          <div class="item" data-food="Shahi Paneer">
+            <img class="img" src="sahipaneer.webp" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Shahi Paneer</h1>
+            <p>Over best dish of paneer enjoy as a muh saaf</p>
+            <h2>Rs 150.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+
+          <div class="item" data-food="Matar paneer">
+            <img
+              src="Aloo_Matar_Paneer_Curry_Recipe__400.jpg"
+              alt="img"
+              width="400px"
+            />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>Matar paneer</h1>
+            <p>
+              matar and paneer delicious Indian dish where chickenis rosted with
+              freshly ground spices, onions, capsicums and chillies.
+            </p>
+            <h2>Rs 250.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item" data-food="daal tadka">
+            <img src="dal-fry-recipe.webp" alt="img" width="400px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>daal tadka</h1>
+            <p>
+              Perfectly cooked tendered pieces of boil daal with a rich tomato
+              and onion based gravy enriched with butter and subtle spices.
+              Garnished with cream.
+            </p>
+            <h2>Rs 190.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item item4" data-food="malai kofta">
+            <img src="malai_kofta_recipe-sixteen_nine.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>malai kofta</h1>
+            <p>
+              veg kofta making by indian spices with fresh cream and desi ghee.
+            </p>
+            <h2>Rs 200.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="Breadscourse">
+        <h1 class="veg">Breads</h1>
+        <div class="foodmenu">
+          <div class="item" data-food="rumali roti">
+            <img class="img" src="rumali.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>rumali roti</h1>
+            <p>hand made rumali roti</p>
+            <h2>Rs 10.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+
+          <div class="item" data-food="tandori roti">
+            <img src="tandoriroti.jpeg" alt="img" width="400px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>tandori roti</h1>
+            <p>tandor ki gram kdak roti</p>
+            <h2>Rs 15.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item" data-food="twah roti">
+            <img src="twaroti.jpg" alt="img" width="400px" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>twah roti</h1>
+            <p>Perfectly cooked tendered .</p>
+            <h2>Rs 10.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+          <div class="item item4" data-food="manda">
+            <img src="manda.jpg" alt="img" />
+            <img class="logo" src="mark.jpg" alt="logo" height="20px" />
+            <h1>manda</h1>
+            <p>garma gram mande</p>
+            <h2>Rs 30.00</h2>
+            <button class="addcart" onclick="addToCart()">Add</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="signupForm">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupUsername" placeholder="Username" />
+      <input type="password" id="signupPassword" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <script src="food.js"></script>
+  </body>
+</html>
